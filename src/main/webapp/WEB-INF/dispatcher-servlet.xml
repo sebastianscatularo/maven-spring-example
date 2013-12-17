@@ -11,7 +11,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
     <!-- paquete en donde spring va a escanear por componentes -->
-    <context:component-scan base-package="com.mycompany.web.controllers" />
+    <context:component-scan base-package="com.mycompany.web.controllers com.mycompany.web.model com.mycompany.web.repository" />
 
     <!-- configuración para servir contenido estatico -->
     <mvc:resources mapping="/static/**" location="/WEB-INF/static/" />
